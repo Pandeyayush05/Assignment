@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonyLIV</title>
+    <link rel="shortcut icon" type="x-icon" href="https://th.bing.com/th?id=OSK.6cc4616956e14300ede9ec4a95313123&w=148&h=148&c=7&o=6&dpr=1.3&pid=SANGAM.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    button{
+        padding-right: 50px;
+    }
+    h4{
+      color: aliceblue;
+    }
+    h3{
+      color: aliceblue;
+      
+    }
+    h2{
+      color: aliceblue;
+    }
+    footer{
+      color: aliceblue;
+        text-align: center;
+    }  
+    nav{
+      color: aliceblue;
+    }
+    
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+              <!--<div class="cols 12 bg-dark">-->
+              
+                <nav class="navbar navbar-expand-lg  bg-dark">
+                  <div class="container-fluid">
+                    <img class="img"src="https://images.slivcdn.com/UI_icons/sonyliv_new_revised_header_logo.png?w=40&q=high" alt="logo" width="40" height="30">
+                    <button class="btn-primary btn-sm">SUBSCRIBE></button>
+                    <li class="nav-item">
+                    <a class="nav-link-light"  href="sony home.html">HOME</a>
+                    </li>
+                        <li class="nav-item">
+                          <a class="nav-link-light"  href="sony movies.html">MOVIES</a>
+                        </li>
+                      
+                        <li class="nav-item">
+                          <a class="nav-link-light" href="sony originals.html">ORIGINALS</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link-light" href="#">SPORTS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link-light" href="sony premium.html">PREMIUM</a>
+                        </li>
+                      </ul>
+                      <li class="nav-item">
+                        <a class="nav-link-light" href="#">OTT</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                      <li class="nav-link">
+                        <a>Sign-in<image class="img" src="data:image/png;base64,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" alt=".." width="30" height="30"></image></a>
+                        </div>
+                    </div>
+                  </div>
+                </nav>
+          </div>
+        </div>
+    </div>
+        </div>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.slivcdn.com/videoasset_images/ramayan_2_masthead_web_v1.jpg?h=auto&w=1366&q=high" class="rounded w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani_masthead_web_v1.jpg?h=auto&w=1366&q=high" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="https://images.slivcdn.com/videoasset_images/stis3_episode20_16feb_masthead_web_v1_rev.jpg?h=auto&w=1366&q=high" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="hot">
+            <h4>HOT PICKS</h4>
+            <p2>
+              <img src="https://images.slivcdn.com/videoasset_images/st24_ind_set1_hotpick_5feb_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani2_hp_12feb_portrait_thumb_rev.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/indian_idol_holiday_30dec_rail_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/ramayan_ind_hotpick_22jan_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/tmkoc_3jan_hotpick_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/scam2003_holiday_1_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/barsatein_revised_hotpick_portrait_thumb_2.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <br>
+              <br>
+              <img src="https://images.slivcdn.com/videoasset_images/gullak_holiday_1_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/jdj_hotpick_6jan_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/maharani_holiday_1_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+            </p2>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="stream">
+            <h2>STREAMING>></h2>
+            <p3>
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani3_15feb_rail1_portrait_thumb_rev.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani_14feb_rail2_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani_14feb_rail3_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani_promo_rail4_7feb_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani2_rail_12feb_sn_portrait_thumblast.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="170" height="220">
+            </p3>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="upcoming">
+            <h3>Upcoming on LIV ></h3>
+            <p4>
+              <img src="https://images.slivcdn.com/videoasset_images/spl2024_al_hilal_vs_al_raed_15feb_dated_promo_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/ufc298_15feb_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/pvl_ahmedabad_vs_kolkatta_17feb_ddt_promo_portrait_thumb_re1.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/adrishyam_portrait_thumb_ss.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/maharanis3_1_portrait_thumb_ss.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/bundesliga2024_vfl_bochum_vs_bayern_munich_14feb_dated_promo_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/mcis2tamil_2_portrait_thumb_ss.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/mci_5dec_telugu_promo_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+            <img src="https://images.slivcdn.com/videoasset_images/spl2024_al_hilal_vs_al_raed_15feb_dated_promo_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="140" height="220">
+            </p4>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="container" id="shark-2">
+            <h3>Explore more of Shark Tank India</h3>
+            <p6>
+              <img src="https://images.slivcdn.com/videoasset_images/st24_coming_upnext_12feb_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/st24_meet_the_shark_25jan_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/st24_ask_the_shark_25jan_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/st24_full_pitches_25jan_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/st24_behind_the_scenes_25jan_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/st24_gupshup_with_rahul_25jan_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+            </p6>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="image">
+            <h1>          </h1>
+            <p7>
+              <img src="https://images.slivcdn.com/videoasset_images/combococ_pvl2024_chennai_blitz_vs_hyderabad_black_hawks_and_slvsafg2024_1stt20i_17feb_today_web.jpg?h=185&w=1371&q=high" class="rounded" alt="images" width="1300" height="180">
+            </p7>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="container" id="latest">
+            <h4>LATEST EPISODES ></h4>
+            <p8>
+              <img src="https://images.slivcdn.com/videoasset_images/stis3_set1_22jan_portrait_thumb_sp.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/raisinghanivsraisinghani_portrait_thumb_newshow.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/indianidol2023_24_2_portrait_thumb_7.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/tmkoc23_9_portrait_thumb_1.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/ramayan_portrait_thumb_sp.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/vanshaj_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/dhruvtara2_4may_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <br>
+              <br>
+              <img src="https://images.slivcdn.com/videoasset_images/dabangi1_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/dildiyaangallaan_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+            </p8>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="movies">
+            <h4>BLOCKBUSTER MOVIES</h4>
+            <p9>
+              <img src="https://images.slivcdn.com/videoasset_images/farhana_3jan_hotpicks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/cobra_3jan_hotpicks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/amj_3jan_hotpicks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/spidermannwh_30dec_holiday_picks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/james_30dec_holiday_picks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/gargi_30dec_holiday_picks_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/salute_holiday_1_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <br>
+              <br>
+              <img src="https://images.slivcdn.com/videoasset_images/toby_holiday_2_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/2018_holiday_1_portrait_thumb.jpg?h=474&w=316&q=high" class="rounded" alt="images" width="180" height="220">
+            </p9>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="wwe">
+            <h4>Best of WWE PPV</h4>
+            <p11>
+              <img src="https://images.slivcdn.com/videoasset_images/royalrumble_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wrestlemania_day2_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wrestlemania_day1_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wwe_royalrumble23_portrait_thumb_replay.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/summerslam_5aug_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wwe_mitb23_gen_30june_portrait_thumb_replay.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wwe_specials_survivor_series23_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <br>
+              <br>
+              <img src="https://images.slivcdn.com/videoasset_images/wwe_crownjewel2023keyart_3nov_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+              <img src="https://images.slivcdn.com/videoasset_images/wwe_fastlane2023_7oct_rev_replay_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="170" height="220">
+            </p11>
+          </div>
+          <br>
+          <br>
+          <div class="container" id="popular">
+            <h3>POPULAR CHANNELS</h3>
+            <p12>
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_SET_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_SAB_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_SonyMarathi_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_BBC_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_AATH_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/PTS_YAY_logo_23oct_circular_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/sony_pal_12july_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <br>
+              <br>
+              <img src="https://images.slivcdn.com/videoasset_images/sports_11july_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+              <img src="https://images.slivcdn.com/videoasset_images/moveis_11july_square_thumb.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+            </p12>
+          </div>
+            <br>
+            <br>
+              <div class="container" id="exclusive">
+                <h4>Most Watched in Entertainment</h4>
+                <p14>
+                  <img src="https://images.slivcdn.com/videoasset_images/everytime_the_judges_performed_landscape_thumb_copy.jpg?h=398&w=708&q=high" class="rounded" alt="images" width="300" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/mashup_set_jdj_s11_best_of_karuna_pandey_20231220t165738_landscape_thumb.jpg?h=398&w=708&q=high" class="rounded" alt="images" width="300" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/aangan_mashup_18dec_clean_landscape_thumb.jpg?h=398&w=708&q=high" class="rounded" alt="images" width="300" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/kavya_mashup_18dec_landscape_thumb_clean_re1.jpg?h=398&w=708&q=high" class="rounded" alt="images" width="300" height="180">
+                  <br>
+                  <br>
+                  <img src="https://images.slivcdn.com/videoasset_images/mashup_set_ibd_norbuandsushimita_moments_landscape_thumb.jpg?h=398&w=708&q=high" class="rounded" alt="images" width="300" height="180">
+                </p14>
+              </div>
+              <br>
+              <div class="container" id="hindi">
+                <h4>Popular Hindi Movies</h4>
+                <p16>
+                  <img src="https://images.slivcdn.com/portrait_thumb/4671998507001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/videoasset_images/fire_in_the_mountains_hindi_12dec_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/4643867281001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/videoasset_images/saala_khadoos_hindi_29june_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/videoasset_images/bhonsle_hindi_12dec_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/Re_LOVE_STORY_12FEB_Potrait_Thumb_WITHOUT_WTP.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <br>
+                  <br>
+                  <img src="https://images.slivcdn.com/videoasset_images/ram_singh_charlie_hindi_12dec_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/videoasset_images/premam_12june_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/0/bahubali_2_12dec_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                </p16>
+                <br>
+                <br>
+                <p17>
+                  <img src="https://images.slivcdn.com/UI_icons/Multipurposecards/Cutout_Cards/Cutout_card_Survey_web.png?h=185&w=1371&q=high" class="rounded" alt="images" width="1300" height="180">
+                </p17>
+              </div>
+              <br>
+              
+              <br>
+              <div class="container" id="languages">
+                <h4>Watch on Your Language</h4>
+                <p21>
+                  <img src="https://images.slivcdn.com/UI_icons/Multipurposecards/Carousel_Landscape_Card/Hindi_lang_1x1.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/UI_icons/Multipurposecards/Carousel_Landscape_Card/Eng_lang_1x1.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/UI_icons/Multipurposecards/Carousel_Landscape_Card/Tamil_lang_1x1.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/malayalam_lang_square_imageNEW.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/bangla_lang_1x1.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/UI_icons/Multipurposecards/Carousel_Landscape_Card/Marathi_lang_1x1.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                  <img src="https://images.slivcdn.com/videoasset_images/kannada_rev22_squre_thumbnail.jpg?h=344&w=344&q=high" class="rounded" alt="images" width="170" height="180">
+                </p21>
+              </div>
+              <br>
+
+              <div class="container" id="kids">
+                <h4>LIV Kids</h4>
+                <p19>
+                  <img src="https://images.slivcdn.com/portrait_thumb/4961014721001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/5428579138001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/5795640502001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/4783997132001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/4831317292001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/gopal-bhar_new_Portrait_Thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <br>
+                  <br>
+                  <img src="https://images.slivcdn.com/videoasset_images/kalpopurer_galpo_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/portrait_thumb/5132247913001.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/Select/balveer_aath_portrait_Thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                  <img src="https://images.slivcdn.com/videoasset_images/guru_aur_bhole_in_magic_kingdom_10nov_portrait_thumb.jpg?h=494&w=344&q=high" class="rounded" alt="images" width="180" height="220">
+                </p19>
+              </div>
+            </div>
+            <br>
+
+          </div>
+          <br>
+          <br>
+          <br></body>
+          <div class="container-fluid" id="row">
+            <div class="row">
+              <div class="cols12 bg-dark">.</div>
+            
+            </div>
+          </div>
+          <div class="container-fluid" id="row">
+            <div class="row">
+              <div class="cols12 bg-dark">.</div>
+            </div>
+          </div>
+          <footer>
+            <div class="foot-panel1 bg-secondary">
+              <a href="#">Back to Top</a>
+          </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Explore Shows</p>
+                <a>SET Shows</a><br>
+                <a>SAB TV Shows</a><br>
+                <a>MARATHI TV Shows</a><br>
+                <a>BENGALI TV Shows</a><br>
+                <a>ENGLISH TV Shows</a><br>
+            </ul>
+            <ul>
+                <p>Top TV Shows</p>
+                <a>Shark Tank INDIA</a><br>
+                <a>Barsatein</a><br>
+                <a>Tarak Mehta Ka Ooltah Chashmah</a><br>
+                <a>Indian Idol</a><vr></vr>
+                <a>Khata Ankahee</a><br>
+                <a>Jhalak Dikhhla Jaa</a><br>
+            </ul>
+            <ul>
+                <p>Sony LIV Originals</p>
+                <a>Cubicles</a><br>
+                <a>Scam 2003 The Telgi Story</a><br>
+                <a>College Romance</a><br>
+                <a>Gullak</a><br>
+            </ul>
+            <ul>
+                <p>News on LIV</p>
+                <a>Toby</a><br>
+                <a>Chamak</a><br>
+                <a>Chaaver</a><br>
+                <a>UFC</a><br>
+                <a>WWE</a><br>
+                <a>Australian Open 2024</a><br>
+                
+            </ul>
+            <ul>
+              <p>Shows by Generes</p>
+              <a>Drama Shows</a><br>
+              <a>Comedy Shows</a><br>
+              <a>Romantic Shows</a><br>
+              <a>Reality Shows</a><br>
+          </ul>
+          <ul>
+            <p>Movies by Language</p>
+            <a>Hindi</a><br>
+            <a>Englsih</a><br>
+            <a>Marathi</a><br>
+            <a>Telegu</a><br>
+            <a>Tamil</a><br>
+        </ul>
+        <ul>
+          <p>Sports</p>
+          <a>Cricket</a><br>
+          <a>Football</a><br>
+          <a>UFC</a><br>
+          <a>WWE</a><br>
+      </ul>
+      <ul>
+        <p>Explore More</p>
+        <a>TV Shows</a><br>
+        <a>Movies</a><br>
+        <a>Premium</a><br>
+        <a>Sports</a><br>
+    </ul>
+        </div>
+        <br>
+        <br>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+            <h6>Get It On</h6>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAAAoCAMAAADjcxkDAAAA/1BMVEVHcEwxMTGOjo7///9+fn55eXmEhISQkJB0dHSLi4sA4v80NTUyMjIA0/8A8HbHx8f29vbi4uIA2/9DQ0M8Pj3AwMDs7Oz7+/sAxv9VVVVnZ2dzcnOrq6s4OTjd3d1LS0tfX1+hoaFrbWv8OEXzMkrY2NiampqKiopPT0+np6f/zAAcc4SAgIC0tLR4eHiFhYX/xACJcpkAt//Pz8+VlZXmKVH/1AAcbYSRkZHOxykE53swUksN2ncVs31p1F1bXn6FXoYA3bDRikkA3LFCU2WuT3MdZ3xzbTAfkGUma14D17AJzbDXOFsC3qyvrzPSjEjgR1eiwUtvmFsPxLAklb6+WhWOAAAACnRSTlMA////uJrS+VvmxdMMwwAABFxJREFUWMPNmHlb2zgQxiPP7gKVQTK2ZRwfcQy+WDtpcEqBQqHHtnt07/3+n2VHcgKmxDTdsE8yfyRRLNm/zLwzmqjX623vbGnrtK2d7R7aN2OTrNV0M/sWvTEmazeqbfd2zPVzkPy73tYGYBC61dM2gYP8Nw6douGb/tmvwjFdnePD1U/6Y3P7zLYjUoaMaYkIGSFaUYUirPDSGC+5pLYJMQarcrw6+fvy6lU3Sc4sYg1IWcoB6+NLVuBzLfww8nVi1hYLSxKuzPHh5OSXSyTpmprGxHRdq/RH8ecctsy5M49lobk6x8sTCXJxcRV0cPRJP2VlWZVeF0c89J+G4+Tni729ix8Xis1lAaEsfywuMU3E6hwHBwcIsod2uVCwMbOZR8rEtq2GQ0OOUHLMdMpiEjtPwoH2bk+RLJSJpKNBEMzSs523utwn8MKAPhFHA3Kxd2V9fVl5kjr2cnd3t+URlEmwlnoqORqUNw3I6/OP+ho4vt+dWwPy+vnx8fnHe7MHRSiMKvrCPftp3h5maZpOR5jZA6xAy3Ds79+SvJEYyHF8+ltLJmMOIByA4nEtDsFrDw2QJjzSB39JDmUK5FfEQI7T09Pz27ka8LFFgn44JV/HEUWRxrm7LMez/TnJ/u7k7fPGH3ccrsMbf38pMx9wKF9CujQH2oxkcnj4tvHHn7eFxIbs3lIrmpUs6roztNylOp1xDKKgzRFBpThoFJmyCKmFAV3Msf+sYUEMCYI67d8VBQ7tDtKqMOihlGyGquGyyY1QCUYNruRwQ/wya3EUoEmOWAA4PrUVqg2jLn8olMmR5Dj8/fyvVggC4PKtdKQxwqDOfBmpDMR0KmBMcu4UWgKKwxROkSXNYwxI0yEDw0IOmjjDswTSCLB9MR1BOzkaDAnyh3e/ojogx16SJCGwWN6IlFBRzmVKcq5X8rGBoThS0IhbgXGXL/agyRc39lwekgRyMoUz8gjH5Ajt8Ojm/f06rbNb+fWhmKrfSh3DBbsRT25wXYlUctgwrUGkg3m+uJZa5pMSgwgOJyMY6ga3HuFQGEc/vH+43YKw5oodnYHc/gMnnHEwGBgOVTpoOKAe0bZOG47cEaM85pxQIbx2+jzgmLx4gRTXC3JT9yF0G4UmNIIEJX8Gvi64K3NakErmkykURybpdM1sc+jI4cFQ8nC5VEDezSExPl0v3moDTBHDZhwS9DcGf2iDMNHD3Pc5xgwR7EI0OqUh1EXSuKrtD9SRXzmSw+JKYR0ciPHpprNDJXGNwU2m0lk05eAwKQAPhRjizqHntQM1g3wqsJOt8LKvqkQtZv6IxJDEBvApM1Rw404OxJDy7N5l9aDV55jzj1bjP0sPTGI7s2/pg45IV62T2dzdxKTp6NcRY6Ewlmx7RnwohZIstziFcQeH/s/NtbVCC2EaEGJkoqUmB0IEnf8rV+x6zMIQbDkMEtnjJ/h/+3/0Y5ty7rAp5zCbci61/nM6os7pNuTc8l8biZR33Rr82QAAAABJRU5ErkJggg==" alt="playstore" width="140" height="50">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAoCAMAAAASeEKOAAAAYFBMVEVHcEyvr6////8xMTGnp6enp6epqamnp6enp6enp6eampo6Ojo0NDSLi4u6urqurq6lpaX39/dBQUFOTk5sbGzq6up1dXXFxcXR0dFhYWGTk5Pd3d19fX1ZWVlHR0eFhYXTwDbLAAAACnRSTlMAEP//ds0+4x2wKL7qggAABBNJREFUWMPNmNt22zgMRTXnpO1EpHi/ipT0/3/ZB9lxbKVO2mbG4YuxuLCgbQAEQA7DMDx9Gx+6fjx/H4ZhGJ6T42OXn56GYXhKfPiS8/dh+CEfD8Llefhn/gIcdN+Gf6evACJ+3AGRSd1ksXTrL+IoD1Y28bZm8r8LshbgxtgUc1NvfsDZ2534xgddJXP6TRDZgHKzN2lKZUifPEWlWLh6Wdcg6SwpQiW5JEeKtOwgIlRy9UslSWlKZU5hJVmD/CDIBqAeQVgbQ5takNZtkWaTNudCZynamDW9GZuURSnrydNeirrNJKVqG3PRdqVRWn0QpAEj3wbJnVOmSkotbZVYBYSz7JkOgsnYtUZK60n2zBUiFaZMkl2RubMkaafNyo+B2HYM5qRJo1kSt8xuch8LJQStc5ZbpoOb8hJ9aCeQSdFBpMxQXkASVRfoKb0HIsM8B0lBPxnTr1JzKl03x62Eluji7OJ8AVljMpmj2qwXcdTWk1xj0oovICGGHYRZpfROaEIEgKjHAgCI/XX9m6cgSYa5kuwr+0pOkpuQG+nnTVJsKTn6OewNzM9d0geu+2dTZ/IMnrLP9T5Ix+3qb56p/7qgeXvLEf1DKqu+5bD+ISVeHhxiHtNrlkOG3DpkKiW8N+aoaKPyfwUSDiDiWOfUfZvVIpYIT9LXzwO56b8e2dr7R6ZhJrmQnKA/LzQ3cZixlX1POElR3UVcTyZf4N0I5XaFZZFnxcWTlKeNX4K4A0i5/bt+3v+nQlUAlCAVgj6JJC1OFiMAWFJoAHaWpEbIGMnNArbfPb7lQDJeR6bRI0qSCjHOxkKR+iKSHAG1kOSU0caZzCh9ijCkRrGlc0IJoV05+wAyH0CgX6XJhJHcTWhYT1ZgOYkLsJxJoDzJ3XcJUZAV8DRAJYW1ggxXzj6AHJPkaiopqEKM0CT1HqGCTrP7opxj4rVF9GcQvTu1YKNBJhlQQggd9m6vOcamvZoez2X/Yl9hpNnLnr5Uv7VBnUHK3q0uitPZsrwHUu+dmw1Na60t6gtIxnayLxWmV3UgnkHyvp0xnRQ7cq211uX+GHDbbV6Xr4xt/zGkRiYpLCoNCkkRXzEnFHJCJjm+VjQklz3b3xueXbtuvu7qcK/7qBBJDUxizSikAWbhFJokKXPyLkTMZIKtjqvFRqF2RbOHX610wb0zofkIAC03AIjL1azSzkALNYo9KZiL+JLuavcRGpksrEXzLyC+AfZ60HlzZnWjmj3JdVbjenU3Gk++38ZKjbEaNTuSBmY5iaRcRq3G/frgjZpI+lnpLkmGkwHZjTL9PY98cOlLqTPXw8IHp7eP3mv+HOTT777/M8gfPkvIui0Xsf4tiPv2Fw81nznJL89f6Onq8Y950s9Pw/BVnjd/At6LguQbVdJVAAAAAElFTkSuQmCC" alt="playstore" width="140" height="50">
+            <br>
+            <br>
+            <h5>Connect With US</h5>
+            <img src="data:image/svg+xml,%3csvg width='37' height='37' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M30.063 0H6.938A6.94 6.94 0 000 6.938v23.125A6.94 6.94 0 006.938 37h23.125A6.94 6.94 0 0037 30.062V6.938A6.94 6.94 0 0030.062 0zM11.44 31.408H5.692l-.033-17.21h5.748l.033 17.21zM8.422 11.946h-.034c-1.879 0-3.09-1.295-3.09-2.907 0-1.651 1.25-2.902 3.163-2.902 1.912 0 3.085 1.25 3.124 2.902 0 1.612-1.218 2.907-3.163 2.907zm22.947 19.462H25.57v-9.35c0-2.263-.6-3.803-2.624-3.803-1.545 0-2.38 1.04-2.78 2.046-.15.361-.188.856-.188 1.362v9.745h-5.826l-.033-17.21h5.825l.034 2.429c.745-1.151 1.984-2.78 4.953-2.78 3.68 0 6.431 2.402 6.431 7.566v9.995h.006z' fill='%23B4B4B4'/%3e%3c/svg%3e" class="rounded" alt="images" width="50" height="50">
+            <img src="data:image/svg+xml,%3csvg width='37' height='37' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.457 0C4.69 0 0 4.691 0 10.457v16.086C0 32.31 4.691 37 10.457 37h16.086C32.31 37 37 32.309 37 26.543V10.457C37 4.69 32.309 0 26.543 0H10.457zm18.5 6.435a1.608 1.608 0 110 3.217 1.608 1.608 0 110-3.217zM18.5 8.848c5.323 0 9.652 4.33 9.652 9.652 0 5.323-4.33 9.652-9.652 9.652-5.323 0-9.652-4.33-9.652-9.652 0-5.323 4.33-9.652 9.652-9.652zm0 1.609c-4.436 0-8.043 3.607-8.043 8.043 0 4.436 3.607 8.043 8.043 8.043 4.436 0 8.043-3.607 8.043-8.043 0-4.436-3.607-8.043-8.043-8.043z' fill='%23B4B4B4'/%3e%3c/svg%3e" class="rounded" alt="images" width="50" height="50">
+            <img src="data:image/svg+xml,%3csvg width='37' height='37' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M33.61 0H3.39C1.542 0 0 1.542 0 3.39v30.22C0 35.458 1.542 37 3.39 37H18.5V21.583h-4.625v-4.625H18.5v-4.625c0-3.854 1.542-6.166 6.167-6.166h4.625v4.625h-2.006c-1.385 0-2.62 1.234-2.62 2.62v3.546h6.167l-.77 4.625h-5.396V37h8.943c1.848 0 3.39-1.542 3.39-3.39V3.39C37 1.542 35.458 0 33.61 0z' fill='%23B4B4B4'/%3e%3c/svg%3e" class="rounded" alt="images" width="50" height="50">
+            <img src="data:image/svg+xml,%3csvg width='37' height='37' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M37 4.733a13.218 13.218 0 01-4.36 1.431c1.566-1.127 2.77-2.912 3.336-5.037A13.863 13.863 0 0131.16 3.34C29.774 1.57 27.8.456 25.62.456c-4.192 0-7.595 4.083-7.595 9.113 0 .715.066 1.41.199 2.074-6.311-.376-11.906-4.004-15.646-9.517-.656 1.344-1.03 2.912-1.03 4.581 0 3.158 1.338 5.948 3.38 7.58a6.621 6.621 0 01-3.44-1.14v.115c0 4.415 2.614 8.1 6.089 8.932a6.385 6.385 0 01-2 .325c-.487 0-.97-.058-1.427-.166.964 3.62 3.77 6.25 7.088 6.33-2.595 2.443-5.871 3.895-9.424 3.895-.615 0-1.217-.043-1.813-.13 3.36 2.587 7.347 4.098 11.635 4.098 13.965 0 21.601-13.883 21.601-25.922 0-.39-.012-.788-.024-1.178 1.482-1.286 2.77-2.89 3.788-4.712z' fill='%23B4B4B4'/%3e%3c/svg%3e" class="rounded" alt="images" width="50" height="50">
+            <br>
+            <br>
+            <div class="footer-bottom bg-secondary">
+              Term of use.Privacy.Policy.FAQS.Contact us.Advertise with us.3.5.50
+          </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="cols12 bg-secondary">
+                © 2024, SonyLIV.com,Inc.Ayush Pandey
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="foot-panel">
+          <div class="pages bg-secondary">
+              <a>Conditions of Use</a>
+              <a>Privacy Notice</a>
+              <a>Your Ads Privacy Choices</a>
+          </div>
+    </footer>         
+            </div>
+          </div>
+</body>
+</html>
